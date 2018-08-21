@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    >
+
+    <ImageView
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:src="@drawable/inu"
+        android:layout_centerHorizontal="true"
+        android:layout_above="@+id/login_layout"
+        android:layout_marginBottom="60dp"/>
+
+    <RelativeLayout
+        android:id="@+id/login_layout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true">
+        <EditText
+            android:id="@+id/id"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="아이디"
+            android:textSize="13dp"
+            android:layout_marginStart="30dp"
+            android:layout_marginEnd="30dp"
+            android:inputType="text"
+            android:imeOptions="actionNext"/>
+
+
+        <EditText
+            android:id="@+id/passwd"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="비밀번호"
+            android:textSize="13dp"
+            android:layout_marginStart="30dp"
+            android:layout_marginEnd="30dp"
+            android:layout_below="@+id/id"
+            android:inputType="textPassword"
+            android:imeOptions="actionSearch"/>
+
+        <Button
+            android:id="@+id/join_btn"
+            android:background="#00ffffff"
+            android:layout_below="@id/passwd"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/join_btn"
+            android:layout_marginStart="90dp"
+            android:layout_marginEnd="90dp"/>
+    </RelativeLayout>
+
+
+    <Button
+        android:id="@+id/login_btn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:background="@android:color/holo_blue_light"
+        android:text="로그인"
+        android:textColor="@android:color/background_light"
+        tools:background="@color/colorPrimary" />
+</RelativeLayout>

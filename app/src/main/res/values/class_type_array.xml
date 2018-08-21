@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="classType">
+        <item>강의실 선택</item>
+        <item>일반 강의실</item>
+        <item>컴퓨터실</item>
+        <item>실험실</item>
+        <item>창고</item>
+        <item>사무실</item>
+    </string-array>
+</resources>

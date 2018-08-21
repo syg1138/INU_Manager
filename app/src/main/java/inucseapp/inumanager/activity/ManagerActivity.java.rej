@@ -1,0 +1,18 @@
+diff a/app/src/main/java/inucseapp/inumanager/activity/ManagerActivity.java b/app/src/main/java/inucseapp/inumanager/activity/ManagerActivity.java	(rejected hunks)
+@@ -121,12 +121,16 @@
+ 
+     }
+ 
++
+     public class classDB extends AsyncTask<Void,Integer,Void> {
+         public String data;
+ 
+         @Override
+         protected Void doInBackground(Void... params) {
+             String param = "id="+id;
++            if(type.equals("0")||type.equals("1")){
++                param = "id=admin";
++            }
+             Log.i("test","메소드 실행 id="+id);
+ 
+             try{
